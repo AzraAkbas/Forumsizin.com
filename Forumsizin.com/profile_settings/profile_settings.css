@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgb(131, 100, 225), rgb(76, 120, 173));
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.custom-header {
+    width: 100%;
+    position: relative;  /* Burası çok önemli */
+    display: flex;
+    justify-content: center; /* Ortadaki başlığı ortalar */
+    align-items: center;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+
+.site-name {
+    position: absolute;  /* Sayfanın en soluna sabitler */
+    left: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.site-name:hover{
+    color: rgb(132, 142, 255);
+}
+.page-title {
+    color: white;
+    font-size: 24px;
+    margin-top: 5px;
+}
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: rgba(225, 225, 225, 0.1);
+    border-radius: 20px;
+    border: 1px solid rgba(225, 225, 225, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 500px;
+    height: 650px;
+    margin-left: 500px;
+    margin-top: 0px;
+  }
+  
+  .wrapper:hover {
+    box-shadow: 5px #b595df;
+  }
+  .image{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .image img {
+    border-radius: 50%;
+    width: 150px;
+    margin-top: 0px;
+  }
+  
+  .input {
+    align-items: center;
+    padding: 20px;
+    padding-top: 15px;
+  }
+  
+  .header h1 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+  
+  .email-password {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .email-password label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 14px;
+    transition: 0.3s ease;
+  }
+  
+  .email-password input {
+    width: 300px;
+    height: 50px;
+    padding: 0 10px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ffffff;
+    color: #02095b;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .email-password input:focus + label,
+  .email-password input:valid + label {
+    transform: translateY(-250%);
+    color: rgb(254, 230, 255);
+  }
+.pp{
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #271930;
+    color: #ffffff;
+    font-size: 14px;
+    border: none;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  
+  .submit {
+    width: 260px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #271930;
+    color: #ffffff;
+    font-size: 14px;
+    border: none;
+    transition: all 0.3s ease;
+    margin-left: 30px;
+  }
+  
+  button:hover {
+    background: rgba(225, 225, 225, 0.2);
+    color: #f8fab1;
+  }
+  
+  
+  .wrapper a {
+    color: #f8fab1;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  
+  

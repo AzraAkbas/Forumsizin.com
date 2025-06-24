@@ -1,0 +1,251 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh; 
+  background: linear-gradient(rgb(131, 100, 225), rgb(76, 120, 173));
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(225, 225, 225, 0.1);
+  border-radius: 20px;
+  border: 1px solid rgba(225, 225, 225, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.wrapper:hover {
+  box-shadow: 10px #b595df;
+}
+
+.image img {
+  border-radius: 50%;
+  margin-left: 20px;
+  width: 400px;
+}
+
+.input {
+  align-items: center;
+  padding: 60px;
+  padding-top: 40px;
+  margin-right: 20px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.email-password {
+  position: relative;
+  margin-bottom: 30px;
+  margin-left: 100px;
+}
+
+.email-password label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-size: 17px;
+  transition: 0.3s ease;
+
+}
+
+.email-password input {
+  width: 400px;
+  height: 50px;
+  padding: 0 15px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffffff;
+  color: #02095b;
+  font-size: 17px;
+  outline: none;
+}
+
+.email-password input:focus + label,
+.email-password input:valid + label {
+  transform: translateY(-250%);
+  color: rgb(254, 230, 255);
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 65px;
+  margin-left: 50px;
+}
+
+.remember label {
+  display: flex;
+  align-items: center;
+}
+
+.remember p {
+  margin: 0 10px;
+  font-size: 17px;
+}
+
+.forgot-password {
+  color: #e2f89b;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+button {
+  width: 400px;
+  height: 50px;
+  padding: 15px;
+  border-radius: 25px;
+  background-color: #271930;
+  color: #ffffff;
+  font-size: 17px;
+  border: none;
+  transition: all 0.3s ease;
+  margin-top: 30px;
+  margin-left: 115px;
+}
+
+button:hover {
+  background: rgba(225, 225, 225, 0.2);
+  color: #f8fab1;
+}
+
+.register {
+  text-align: center;
+  color: #ffffff;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 50px;
+}
+
+.wrapper a {
+  color: #f8fab1;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+.wrapper a:hover {
+  color: rgb(17, 0, 72);
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 40%;
+  background-color: #fff;
+  appearance: none;
+  position: relative;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type="checkbox"]:checked {
+  background-color: rgb(4, 0, 78);
+  transform: scale(1.1);
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+}
+
+@media (max-width: 1530px) {
+  .wrapper {
+    max-width: 440px; 
+    height: 580px;
+    margin-right: 20px ;
+
+  }
+
+  .input {
+    margin-right: 70px;
+  }
+
+  .image img {
+    max-width: 200px;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  .header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .register p{
+    margin-bottom: 5px;
+  }
+  
+}
+#cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(39, 25, 48, 0.95);
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index: 9999;
+  font-family: Arial, Helvetica, sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 90vw;
+  width: fit-content;
+  min-width: 300px;
+}
+
+#cookie-banner p {
+  margin: 0;
+  padding-right: 15px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+#cookie-banner button {
+  background-color: #271930;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  padding: 5px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 8px;
+  min-width: auto;
+  width: auto;
+  height: 28px;
+  transition: background-color 0.3s ease;
+}
+
+#cookie-banner button:hover {
+  background: rgba(225, 225, 225, 0.2);
+  color: #f8fab1;
+}
